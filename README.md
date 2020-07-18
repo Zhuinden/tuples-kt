@@ -2,6 +2,17 @@
 
 Tuples-KT contains tuples from 4 (`Tuple4`) to 16 (`Tuple16`) arity, to make up for that Kotlin only has `Pair` and `Triple`.
 
+## Why?
+
+Tuples are useful if you don't want to create a local type or class, as the name is "unnecessary" and we just want to combine a few values together without having to name the class. Works well in combination with decomposition.
+
+``` kotlin
+val (someValue, otherValue) = pair
+val (someValue, otherValue, anotherValue) = triple
+val (someValue, otherValue, anotherValue, thatValue) = tuple4
+...
+```
+
 ## Using Tuples-KT
 
 In order to use Tuples-KT, you need to add `jitpack` to your project root `build.gradle.kts`
