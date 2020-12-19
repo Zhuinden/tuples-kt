@@ -10,9 +10,11 @@ buildscript {
 }
 
 apply plugin: 'kotlin'
-apply plugin: 'maven'
+apply plugin: 'java-library'
+apply plugin: 'maven-publish'
 
-group = 'com.github.Zhuinden'
+sourceCompatibility = 1.6 // java 6
+targetCompatibility = 1.6
 
 repositories {
     mavenCentral()
@@ -37,19 +39,17 @@ artifacts {
     archives javadocJar
 }
 
-// To specify a license in the pom:
-install {
-  repositories.mavenInstaller {
-    pom.project {
-      licenses {
-        license {
-          name 'The Apache Software License, Version 2.0'
-          url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-          distribution 'repo'
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'com.github.Zhuinden'
+            artifactId = 'tupleskt'
+            version = '1.1.0'
+
+            from components.java
+            artifact sourcesJar
         }
-      }
     }
-  }
 }
 
 wrapper {
