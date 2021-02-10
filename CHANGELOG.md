@@ -1,5 +1,10 @@
 # Change log
 
+-Tuples-kt 1.1.1 (2021-02-10)
+--------------------------------
+
+- Fix distribution issue renaming the kotlin META-INF/*.kotlin_module of the project to build.kotlin_module
+
 -Tuples-kt 1.1.0 (2020-12-19)
 --------------------------------
 

@@ -1,5 +1,5 @@
 buildscript {
-    ext.kotlin_version = '1.4.21'
+    ext.kotlin_version = '1.4.30'
     repositories {
         mavenCentral()
         jcenter()
@@ -44,7 +44,7 @@ publishing {
         maven(MavenPublication) {
             groupId = 'com.github.Zhuinden'
             artifactId = 'tupleskt'
-            version = '1.1.0'
+            version = '1.1.1'
 
             from components.java
             artifact sourcesJar
@@ -61,10 +61,14 @@ compileKotlin {
     kotlinOptions {
         jvmTarget = "1.6"
     }
+    
+    kotlinOptions.moduleName = "com.zhuinden.tupleskt"
 }
 
 compileTestKotlin {
     kotlinOptions {
         jvmTarget = "1.6"
     }
+    
+    kotlinOptions.moduleName = "com.zhuinden.tupleskt"
 }
