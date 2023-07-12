@@ -44,7 +44,7 @@ publishing {
         maven(MavenPublication) {
             groupId = 'com.github.Zhuinden'
             artifactId = 'tupleskt'
-            version = '1.1.1'
+            version = '1.2.0'
 
             from components.java
             artifact sourcesJar
