@@ -11,7 +11,10 @@ val (someValue, otherValue) = pair
 val (someValue, otherValue, anotherValue) = triple
 val (someValue, otherValue, anotherValue, thatValue) = tuple4
 ...
+val (a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z) = tuple26
+...
 ```
+
 
 ## Using Tuples-KT
 
@@ -61,19 +64,19 @@ and then, add the dependency to your module's `build.gradle.kts` (or `build.grad
 
 ``` kotlin
 // build.gradle.kts
-implementation("com.github.Zhuinden:tuples-kt:1.1.1")
+implementation("com.github.Zhuinden:tuples-kt:1.2.0")
 ```
 
 or
 
 ``` groovy
 // build.gradle
-implementation 'com.github.Zhuinden:tuples-kt:1.1.1'
+implementation 'com.github.Zhuinden:tuples-kt:1.2.0'
 ```
 
 ## License
 
-    Copyright 2020 Gabor Varadi
+    Copyright 2020-2023 Gabor Varadi
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
