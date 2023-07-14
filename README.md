@@ -1,6 +1,6 @@
 # Tuples-KT
 
-Tuples-KT contains tuples from 4 (`Tuple4`) to 16 (`Tuple16`) arity, to make up for that Kotlin only has `Pair` and `Triple`.
+Tuples-KT contains tuples from 4 (`Tuple4`) to 36 (`Tuple36`) arity, to make up for that Kotlin only has `Pair` and `Triple`.
 
 ## Why?
 
